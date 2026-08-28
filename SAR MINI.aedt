@@ -1,0 +1,42 @@
+$begin 'ConnectionParameters'
+	DesktopProcessID=21164
+	DesktopProcessPath='C:\\Program Files\\AnsysEM\\Ansys Student\\v242\\Win64\\ansysedtsv.exe'
+	LaunchedByWB=false
+	GRPCPort=50052
+	$begin 'DesktopStubBlock'
+		$begin 'CommDetails'
+			TransportType=1
+			IPAddress='172.17.1.148'
+			ListenPort='52777'
+			IPAddressVector[1: '10.2.0.2']
+		$end 'CommDetails'
+		$begin 'Marshall'
+			InstanceID=503
+			ProcID=21164
+			InterfaceID=1
+			FactoryIntID='DesktopInterfaceForWBProxyStubFactory'
+		$end 'Marshall'
+	$end 'DesktopStubBlock'
+	$begin 'DesktopBackgroundObjStubBlock'
+		$begin 'CommDetails'
+			TransportType=1
+			IPAddress='172.17.1.148'
+			ListenPort='52777'
+			IPAddressVector[1: '10.2.0.2']
+		$end 'CommDetails'
+		$begin 'Marshall'
+			InstanceID=505
+			ProcID=21164
+			InterfaceID=2
+			FactoryIntID='DesktopInterfaceForWBProxyStubFactory'
+		$end 'Marshall'
+	$end 'DesktopBackgroundObjStubBlock'
+	$begin 'WebClientBlock'
+		Url='http://ShamHorcrux:10190/?server=ws://ShamHorcrux:9678&token=7aeba9ac-f7dd-b556-bce9-b8b22f858820&startTab=monitor/graph'
+		SecureUrl='https://ShamHorcrux:10446/?server=wss://ShamHorcrux:9934&token=7aeba9ac-f7dd-b556-bce9-b8b22f858820&startTab=monitor/graph'
+		WsHost='ShamHorcrux'
+		WsPort=9678
+		WssPort=9934
+		Token='7aeba9ac-f7dd-b556-bce9-b8b22f858820'
+	$end 'WebClientBlock'
+$end 'ConnectionParameters'
